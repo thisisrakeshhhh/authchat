@@ -1,0 +1,26 @@
+//express dotenv cookie-parser bryptjs mongoose socket.io jsonwebtoken
+//npm i nodemon --save-dev
+dotenv  dotenv import dotenv.config(); process.env.PORT
+import module js | require comman js
+  // "type": "commonjs",
+//prefixing all auth routes with /api/auth
+utils
+//httpOnly // xss attacks cross-sote scripting attacks
+//sameSite: "strict, csrf attacks cross -sote request forgery attacks
+openssl rand -base64 32
+
+
+
+
+daisy ui tailwaind css
+
+tailwind css intellisense
+
+"react.pro-types": "off",
+
+"eslint.validate": ["javascript", "jsx"],
+"eslint.codeActionsOnSave.actions": [
+    "source.fixAll.eslint"
+]
+
+react-hot-toast
