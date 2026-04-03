@@ -1,6 +1,17 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import useLogin from "../../components/hooks/useLogin";
 
 const Login = () => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    
+    const {loading, login} = useLogin();
+
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+        await login(username, password);
+    }
     return (
         <div className="flex flex-col items-center justify-center min-w-96 mx-auto">
             <div className="w-full p-6 bg-neutral-900/40 rounded-xl bg-clip-padding backdrop-filter backdrop-blur-md border border-gray-100/20 shadow-2xl transition-all duration-300 hover:shadow-cyan-500/10">
@@ -8,7 +19,7 @@ const Login = () => {
                     Login to <span className="text-cyan-400">AuthChat</span>
                 </h1>
                 
-                <form className="flex flex-col gap-4">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                     <div>
                         <label className="label p-2">
                             <span className="text-base label-text text-gray-200">Username</span>
@@ -17,6 +28,8 @@ const Login = () => {
                             type="text" 
                             placeholder="Enter username" 
                             className="w-full input input-bordered h-10 bg-gray-800/50 text-white placeholder-gray-400 border-gray-600 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all" 
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
                         />
                     </div>
 
@@ -28,6 +41,8 @@ const Login = () => {
                             type="password" 
                             placeholder="Enter Password" 
                             className="w-full input input-bordered h-10 bg-gray-800/50 text-white placeholder-gray-400 border-gray-600 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all" 
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
 

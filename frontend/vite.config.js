@@ -10,8 +10,8 @@ export default defineConfig({
 
   ],
       server: {//i chane port have
-      port: 1000,
-      strictPort: true,
+      port: 5173,
+      strictPort: false,
       proxy: {
         '/api': {
           target: 'http://localhost:3000',//prefixing it

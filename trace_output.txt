@@ -1,0 +1,132 @@
+﻿[dotenv@17.3.1] injecting env (4) from .env -- tip: ΓÜÖ∩╕Å  suppress all logs with { quiet: true }
+node : C:\Users\Rakesh kum
+ar\Desktop\authchat\node_m
+odules\path-to-regexp\dist
+\index.js:85
+At line:1 char:1
++ node --trace-uncaught 
+backend/server.js 2>&1 | 
+Out-File -FilePath tra ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (C  
+  :\Users\Rakesh...ist\   
+ index.js:85:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+            throw new 
+PathError(`Missing 
+parameter name at index 
+${index}`, str);
+                  ^
+
+PathError [TypeError]: 
+Missing parameter name at 
+index 1: *; visit https://
+git.new/pathToRegexpError 
+for info
+    at name 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:85:19)
+    at parse 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:101:59)
+    at pathToRegexp 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:263:56)
+    at Object.match 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:225:30)
+    at matcher 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\router\lib\layer.js:86:23
+)
+    at new Layer 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\router\lib\layer.js:93:62
+)
+    at Function.route 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\router\index.js:428:17)
+    at Function.route 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\express\lib\application.j
+s:257:22)
+    at app.<computed> [as 
+get] (C:\Users\Rakesh kuma
+r\Desktop\authchat\node_mo
+dules\express\lib\applicat
+ion.js:478:22)
+    at file:///C:/Users/Ra
+kesh%20kumar/Desktop/authc
+hat/backend/server.js:28:5
+ {
+  originalPath: '*'
+}
+Thrown at:
+    at name 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:85:19)
+    at parse 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:101:59)
+    at pathToRegexp 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:263:56)
+    at match 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\path-to-regexp\dist\index
+.js:225:30)
+    at matcher 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\router\lib\layer.js:86:23
+)
+    at Layer 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\router\lib\layer.js:93:62
+)
+    at route 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\router\index.js:428:17)
+    at route 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\express\lib\application.j
+s:257:22)
+    at app.<computed> 
+(C:\Users\Rakesh kumar\Des
+ktop\authchat\node_modules
+\express\lib\application.j
+s:478:22)
+    at file:///C:/Users/Ra
+kesh%20kumar/Desktop/authc
+hat/backend/server.js:28:5
+
+
+Node.js v22.13.0

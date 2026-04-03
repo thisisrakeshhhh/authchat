@@ -24,3 +24,25 @@ tailwind css intellisense
 ]
 
 react-hot-toast
+
+
+data calling frontend to backend
+| Method              | Used in Dev | Used in Production | Need CORS |
+| ------------------- | ----------- | ------------------ | --------- |
+| Vite Proxy          | ✅           | ❌                  | ❌         |
+| Direct API Call     | ✅           | ✅                  | ✅         |
+| Same Origin (Nginx) | ❌           | ✅                  | ❌         |
+
+frontend and backend api call 
+fetch
+axios
+api service layer
+custom hooks
+react query/tanstack query mutation hooks
+redux toolkit query rtk query
+
+direct api call x
+custom hooks
+api serveice layer
+advanced state management + api calling
+
