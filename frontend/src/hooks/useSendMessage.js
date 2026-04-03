@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useConversation from "../zustand/useConversation";
 import toast from "react-hot-toast";
-import notificationSound from "../assets/sounds/notification.mp3";
+
 
 const useSendMessage = () => {
 	const [loading, setLoading] = useState(false);
@@ -20,8 +20,6 @@ const useSendMessage = () => {
 			const data = await res.json();
 			if (data.error) throw new Error(data.error);
 
-			const sound = new Audio(notificationSound);
-			sound.play();
 			setMessages((prevMessages) => [...prevMessages, data]);
 		} catch (error) {
 			toast.error(error.message);
